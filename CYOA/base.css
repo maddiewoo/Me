@@ -5,8 +5,23 @@ body {
 
 * {
 	color: blue;
+	font-family: cursive;
 }
 
 .dialogue {
+	font-style: cursive
 	
 }
+
+.riddle {
+	font-family: cursive;
+}
+
+.decision {
+	font-family: fantasy;
+}
+
+.tuesday {
+	color:indigo;
+}
+
