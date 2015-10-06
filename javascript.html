@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+
+		<title> Javascript </title>
+
+		<script>
+
+			var check = 1;
+
+			var helloWorld = function() {
+				console.log("If the function runs this text will appear in the console!"); 
+				check++;
+				if (check < 3) {
+					alert("Hello World!");
+				}	else if (check < 6) {
+					alert("STOP CLICKING ON ME")
+				}
+
+			}
+
+			var test = 3;
+
+			var add = function() {
+				test +=6;
+				alert("Test's value is " + test);
+			}
+
+			var subtract = function() {
+				test-=2;
+				alert("Test's value is " + test);
+
+			}
+
+		</script>
+
+	</head>
+
+	<body>
+		<button type="button" onclick="helloWorld()"> Hello World </button>
+
+		<button type="button" onclick="add()"> Add Six </button>
+
+		<button type="button" onclick="subtract()"> Subtract One </button>
+	</body>
+
+</html>
