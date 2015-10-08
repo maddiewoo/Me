@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+
+	<title> For loop </title>
+
+	<script>
+
+	var forLoop = function() {
+		for (var count = 10; count > -1; count--) {
+			if (count === 0) {
+				console.log("You are at zero");
+			} else {
+				console.log("There are still " + count + " numbers left until zero");
+			}
+		}
+	}
+
+	var whileLoop = function() {
+		var count = 10;
+		while (count < 15) {
+			if (count === 0) {
+				console.log("You are at zero");
+			} else {
+				console.log("There are still " + count + " numbers until zero");
+			}
+			count++;
+		}
+	}
+
+	var experiment = function() {
+		var out = "#";
+		var count = 1;
+		while (count < 7) {
+			console.log(out);
+			count++;
+			out = out+"#";
+		}
+	}
+
+	var experiment2 = function() {
+		var out = "#";
+		for (var count = 1; count < 10; count++) {
+			console.log (out);
+			out = out + "#";
+		}
+	}
+
+	var extraCredit = function() {
+		var out = "#"
+		for ( var count = 1; count < 7; count++) {
+			console.log (out);
+			out = out + "#"; for ())
+	}
+
+	</script>
+
+	</head>
+
+	<body>
+
+	<button type="button" onclick="experiment()">Numbers from zero with for </button>
+
+	<button type="button" onclick="experiment2()"> Numbers from zero with while </button>
+
+	</body>
+
+</html>
