@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+
+	<title> Prompt Alert </title>
+
+	<script> 
+
+		var changeTextColor = function (){
+			var color = prompt("what color?", "red");
+			document.getElementById ("changeMe").style.color = color;
+		}
+
+		var changeText = function (){
+			var toInsert = prompt("What should the paragraph say?" , "Type Here");
+			if (toInsert.length === 0) {
+				return;
+			}
+			document.getElementById ("changeMe").innerHTML =toInsert;
+		}
+
+		var changeTheme = function (text, background, fontFamily) {
+			document.getElementById("changeMe").style.color = text;
+			document.getElementsByTagName("body")[0].style.backgroundColor = background;
+			document.getElementById("changeMe").style.fontFamily = fontFamily
+		}
+
+	</script> 
+
+	</head>
+
+	<body>
+
+	<button onclick= "changeTextColor()"> Pick a color. </button> 
+
+	<br> </br>
+
+	<button onclick = "changeText()"> Write a paragraph </button>
+
+	<p Id = changeMe> This changes color </p>
+
+	<button onclick="changeTheme('blue', 'indigo', 'cursive')"> Change the theme </button>
+
+	</body>
+
+</html>
